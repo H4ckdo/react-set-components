@@ -1,0 +1,22 @@
+@import '../settings';
+
+.wrap-form {
+  .static-height_search {
+    height: 65px;
+  }
+}
+
+.field-title, .field-icon {
+  vertical-align: middle;
+  position: relative;
+  top: 10px;
+}
+
+.field-title {
+  font-size: 18px;
+}
+
+.field-icon {
+  margin-right: 5px;
+  color: #1d1d1d;
+}
