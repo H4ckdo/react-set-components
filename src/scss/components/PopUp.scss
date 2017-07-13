@@ -5,11 +5,8 @@
 
 
 .popup {
-  max-width: 800px;
-  max-width: 100%;
   height: auto !important;
   transition: all 0.5s;
-  width: 800px;
   .title-container {
     padding: 0px;
   }
@@ -38,7 +35,7 @@
 .wrap-popup-loader {
   text-align: center;
   .spin {
-    background-image: url(/images/spin.gif);
+    background-image: url('/images/spin.gif');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -35,7 +35,7 @@ export default class Mask extends React.Component {
     })
 
     this.fitElements();
-    await this.moveTo("cuarto");
+
     $(window).resize(() => {
       this.fitElements();
       setTimeout(this.fitHeight, transitionTime);
@@ -211,7 +211,8 @@ export default class Mask extends React.Component {
         <ul>
           {
             this.props.data.map((item, index) =>  {
-              return <li className="point" onClick={this.moveTo.bind(this, item.props.id)} title={item.props.id} style={
+              let style = index === 0 ? "point point-selected" : "point";
+              return <li className={style}  onClick={this.moveTo.bind(this, item.props.id)} title={item.props.id} style={
                 {transition: `all ${this.props.transitionTime/1000 || 0.25}s`}
               } key={ index }></li>
             })

@@ -103,7 +103,7 @@ export default class App extends React.Component {
           <PopUp
             lift={ this.addChildren.bind(this, "confirm") }
             id="createUser"
-            animation={ "perspective-left" }
+            animation={ "rebound" }
             full={ false }
             type="custom"
             data={<h1>TEST</h1>}
@@ -111,13 +111,13 @@ export default class App extends React.Component {
 
           <Mask
               lift={ this.addChildren.bind(this, "mask") }
-              animation={ "rebound" }
+              animation={ "appear" }
               delay={ 100 }
               forwardEnd={ false }
               forwardStart={ false }
               noArrows={ false }
-              transitionTime={ 100 }
-              navigationControls={ false }
+              transitionTime={ 400 }
+              navigationControls={ true }
               data={
               [
                 <div className="current uno" id="primero">
@@ -128,21 +128,8 @@ export default class App extends React.Component {
                 </div>,
                 <div id="tercero">
                   <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F28295271%2F107843312599%2F1%2Foriginal.jpg?w=1000&rect=0%2C0%2C960%2C480&s=ccd37cb6fef06c223543e0dbb3df5f5f"/>
-                </div>,
-                <div id="cuarto">
-                  <img src="http://cdn.zonarutoppuden.com/ns/peliculas-naruto-shippuden.jpg"/>
-                </div>,
-                <div id="quinto">
-                  <div>
-                    <h1>TEST</h1>
-                    <p>
-                      fewfewfewfewf ewfewf ewfe wfwe
-                    </p>
-                    <img src="http://cdn.zonarutoppuden.com/ns/peliculas-naruto-shippuden.jpg"/>
-
-                  </div>
                 </div>
-              ]
+                ]
             }
           />
 
