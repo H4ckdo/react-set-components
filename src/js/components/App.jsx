@@ -100,7 +100,6 @@ export default class App extends React.Component {
           <button onClick={ this.openConfirmPopUp.bind(this) }>Click me</button>
         </section>
 
-
           <PopUp
             lift={ this.addChildren.bind(this, "confirm") }
             id="createUser"

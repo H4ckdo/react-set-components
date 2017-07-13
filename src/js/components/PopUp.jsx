@@ -13,7 +13,7 @@ require("expose-loader?MediaQuery!../../../node_modules/foundation-sites/js/foun
 require("expose-loader?Motion!../../../node_modules/foundation-sites/js/foundation.util.motion.js");
 
 
-export default class PopUpConfirm extends React.Component {
+export default class PopUp extends React.Component {
   constructor(props) {
     super(props);
     this.childrens = {};
@@ -21,6 +21,7 @@ export default class PopUpConfirm extends React.Component {
     this.state = {
       fullOnce: this.props.fullOnce || false
     }
+
   }//end constructor
 
   componentDidMount() {
